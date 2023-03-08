@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/anson923/ResturantJS/issues"
   },
-  "homepage": "https://github.com/anson923/ResturantJS#readme"
+  "homepage": "https://github.com/anson923/ResturantJS#readme",
+  "devDependencies": {
+    "webpack": "^5.76.0",
+    "webpack-cli": "^5.0.1"
+  }
 }

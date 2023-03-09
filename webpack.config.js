@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -15,13 +14,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       // title: 'Development',
       template: path.resolve(__dirname,'dist/index.html'),
+      inject: false,
     }),
   ],
 
   devServer: {
-    static: './dist',
-    port: '8080',
-    hot: true,
+    static: '.dist',
+    watchFiles: ["src/*.html"],
+    compress: true,
+    port: 8080,
+    hot:true,
+    open: true,
   },
 
   // optimization: {

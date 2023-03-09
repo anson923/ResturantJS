@@ -1,6 +1,6 @@
-import loadHeader from './header';
-import loadHome from './home';
-import loadFooter from './footer';
+import loadHeader from './module/header';
+import loadHome from './module/home';
+import loadFooter from './module/footer';
 
 //Initial Website
 const initialWebsite = (() => {

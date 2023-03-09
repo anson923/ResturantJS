@@ -1,10 +1,16 @@
+import '../styles/footer.css';
+
 function loadFooter() {
   const content = document.querySelector('.content');
 
-  const text = document.createElement('div');
-  text.textContent = 'Hello World! I am Footer!';
+  const footer = document.createElement('footer');
+  footer.className = 'footer';
 
-  content.appendChild(text);
+  const copyright = document.createElement('span');
+  copyright.textContent = 'Copyright © 2023 AnsonDev. All rights reserved.';
+  footer.appendChild(copyright);
+
+  content.appendChild(footer);
 
 }
 

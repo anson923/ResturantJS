@@ -5,6 +5,7 @@ import './styles/general.css';
 
 //Initial Website
 const initialWebsite = (() => {
+  
   loadHeader();
   loadHome();
   loadFooter();

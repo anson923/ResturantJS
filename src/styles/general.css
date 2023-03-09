@@ -18,10 +18,13 @@
   font-weight: bold;
   font-style: normal;
 }
-
-body{
+* {
   margin: 0;
   padding: 0;
+}
+
+body{
   font-family: 'Roboto', 'Arial';
   font-weight: normal;
+  background-color: var(--header-color);
 }

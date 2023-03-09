@@ -1,3 +1,55 @@
-.HeaderText {
-  color: red;
+:root{
+  --header-color: rgba(255, 0, 0, 0.3);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  background-color: var(--header-color);
+  
+}
+
+.links {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  color: black;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.logoPlaceholder {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: center;
+}
+
+.logoImage {
+  max-width: 20%;
+  height: auto;
+}
+
+.tab.active {
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.tab:hover {
+  border-bottom: 5px solid rgb(0, 0, 0);
 }

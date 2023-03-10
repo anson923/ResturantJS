@@ -11,6 +11,12 @@ function loadHome() {
 
   home.appendChild(homeImage);
   content.appendChild(home);
+
+
+
+  const floater = document.createElement('div');
+  floater.className = 'floater';
+  home.appendChild(floater);
 }
 
 export default loadHome;

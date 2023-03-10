@@ -1,6 +1,8 @@
 .home-container {
   overflow: hidden;
-  height: 1fr;
+  flex: 1;
+  position: relative;
+  min-height: 600px;
 }
 
 #HomeImage {
@@ -10,4 +12,21 @@
 
   object-fit: cover;
   object-position: center;
+}
+
+.floater {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  transform: translate(-50%,-50%);
+
+
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+
+
+  padding: 20px;
+  z-index: 1;
 }

@@ -28,3 +28,9 @@ body{
   font-weight: normal;
   background-color: var(--header-color);
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

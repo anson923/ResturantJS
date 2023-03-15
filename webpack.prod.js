@@ -9,7 +9,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin()],
+    minimizer: [new TerserPlugin(),new CssMinimizerPlugin(),],
   },
   plugins: [
     new MiniCssExtractPlugin({

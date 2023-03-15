@@ -2,17 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname,'dist'),
-    clean: true,
+  entry: {
+    app: './src/index.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // title: '[Development!] Resturant Homepage',
+      title: 'Production',
       template: path.resolve(__dirname,'dist/index.html'),
       inject: false,
     }),
@@ -36,17 +31,9 @@ module.exports = {
       }
     ]
   },
-
-  devServer: {
-    static: '.dist',
-    watchFiles: ["src/*.html"],
-    compress: true,
-    port: 8080,
-    hot:true,
-    open: true,
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname,'dist'),
+    clean: true,
   },
-
-  // optimization: {
-  //   runtimeChunk: 'single',
-  // },
 };

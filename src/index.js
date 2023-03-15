@@ -1,12 +1,4 @@
-import loadHeader from './module/header';
-import loadHome from './module/home';
-import loadFooter from './module/footer';
-import './styles/general.css';
+import InitialWebsite from './module/initPage.js';
 
-//Initial Website
-const initialWebsite = (() => {
-  
-  loadHeader();
-  loadHome();
-  loadFooter();
-})();
+//Init Website
+InitialWebsite();

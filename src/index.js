@@ -25,6 +25,7 @@ tabs.forEach(tab => {
     
     const floater = document.querySelector('.floater');
     floater.innerHTML = ``;
+    floater.className = 'floater';
 
     switch(target){
       
@@ -35,6 +36,7 @@ tabs.forEach(tab => {
 
       case '#menu':
         console.log('load menu');
+        floater.classList.add('menu');
         InitMenu();
         break;
       

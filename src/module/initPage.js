@@ -1,13 +1,17 @@
 import loadHeader from './header';
 import loadHome from './home';
 import loadFooter from './footer';
+import loadHomeContent from './homeContent';
 import '../styles/general.css';
 
 //Initial Website
-function initialWebsite() {
+export function InitialWebsite() {
   loadHeader();
   loadHome();
+  loadHomeContent();
   loadFooter();
 }
 
-export default initialWebsite;
+export function LoadHomeContent() {
+  loadHomeContent();
+}

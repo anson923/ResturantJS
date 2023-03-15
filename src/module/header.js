@@ -17,9 +17,9 @@ function loadHeader() {
   const navbar = document.createElement('nav');
   navbar.innerHTML = `
   <ul class="links">
-    <li class="tab active" data-tab-target="#home"><a href="#home">Home</a></li>
-    <li class="tab" data-tab-target="#menu"><a href="#menu">Menu</a></li>
-    <li class="tab" data-tab-target="#contact"><a href="#contact">Contact</a></li>
+    <li class="tab active" data-tab-target="#home">Home</li>
+    <li class="tab" data-tab-target="#menu">Menu</li>
+    <li class="tab" data-tab-target="#contact">Contact</li>
   </ul>`;
 
   header.appendChild(navbar);

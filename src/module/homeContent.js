@@ -1,4 +1,4 @@
-import FoodImage from '../images/FoodImage.jpg';
+import FoodImage from '../images/foodImage.jpg';
 
 function HomeContent() {
   const floater = document.querySelector('.floater');

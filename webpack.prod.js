@@ -12,10 +12,7 @@ module.exports = merge(common, {
     minimizer: [new TerserPlugin(),new CssMinimizerPlugin(),],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
+    new MiniCssExtractPlugin(),
     new CssMinimizerPlugin(),
   ],
   module: {

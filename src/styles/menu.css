@@ -2,7 +2,7 @@
   color: black;
   font-size: 1rem;
 
-  font-weight: bold;
+  font-weight: 600;
   min-width: 100px;
   display: flex;
   flex-direction: column;
@@ -12,27 +12,36 @@
 }
 @media (max-width: 480px) { /* adjust the max-width as needed */
   .FoodInfo {
-    font-size: 0.8rem; /* reduce the font size for smaller screens */
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .FoodItemContainer {
+    grid-template-columns: 150px 200px !important;
   }
 }
 
 /* Single Food Item */
 .FoodItemContainer {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  border-radius: 5px;
+  grid-template-columns: 200px 200px;
+  transition: all 0.5s ease;
 }
 
 #FoodImage {
+  /* Fixed Image Style */
   width: 100%;
-  min-width: 150px;
+  height: 113px;
+  min-width: 100px;
+  object-fit:cover;
+  object-position: center;
 }
 
 /* All Food FlexBox */
 .FoodContainer {
   display: flex;
   flex-wrap: wrap;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   max-height: 100%;
   width: 100%;
 

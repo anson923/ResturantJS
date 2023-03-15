@@ -20,7 +20,7 @@ const FoodLibrary = [
   {name: 'Spicy Turkey Sandwich', id: 7, price: 19.99, src: SpicyTurkeySandwich},
   {name: 'Spicy Chicken Soup', id: 8, price: 9.99, src: SpicyChickenSoup},
   {name: 'Spicy Sausage Pizza', id: 9, price: 21.99, src: SpicySausagePizza},
-  {name: 'Spicy Korean Pork.jpg', id: 10, price: 17.99, src: SpicyKoreanPork},
+  {name: 'Spicy Korean Pork', id: 10, price: 17.99, src: SpicyKoreanPork},
 ];
 
 const createFoodItem = (food) => {

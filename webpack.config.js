@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // title: 'Development',
+      // title: '[Development!] Resturant Homepage',
       template: path.resolve(__dirname,'dist/index.html'),
       inject: false,
     }),

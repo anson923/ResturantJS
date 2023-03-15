@@ -1,4 +1,5 @@
 import {InitialWebsite,LoadHomeContent} from './module/initPage.js';
+import InitMenu from './module/menu';
 
 //Init Website
 InitialWebsite();
@@ -34,6 +35,7 @@ tabs.forEach(tab => {
 
       case '#menu':
         console.log('load menu');
+        InitMenu();
         break;
       
       case '#contact':

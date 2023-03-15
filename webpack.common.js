@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Production',
+      title: 'SpicyIsland Vancouver',
       template: path.resolve(__dirname,'src/index.html'),
       inject: true,
     }),

@@ -6,7 +6,7 @@ function HomeContent() {
   const imgContainer = document.createElement('div');
   imgContainer.id = 'ImageContainer';
   const foodImage = new Image();
-  foodImage.id = 'FoodImage';
+  foodImage.id = 'HomeFoodImage';
   foodImage.src = FoodImage;
   imgContainer.appendChild(foodImage);
 

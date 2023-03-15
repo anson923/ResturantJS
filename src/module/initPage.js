@@ -12,6 +12,6 @@ export function InitialWebsite() {
   loadFooter();
 }
 
-export function LoadHomeContent() {
+export function InitHomeContent() {
   loadHomeContent();
 }

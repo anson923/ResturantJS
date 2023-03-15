@@ -42,6 +42,11 @@ li a {
   max-width: 12%;
   height: auto;
 }
+@media (max-width:480px) {
+  .logoImage {
+    max-width: 30%;
+  }
+}
 
 .tab.active {
   border-bottom: 5px solid rgb(0, 0, 0);

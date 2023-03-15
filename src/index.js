@@ -1,5 +1,6 @@
-import {InitialWebsite,LoadHomeContent} from './module/initPage.js';
+import {InitialWebsite,InitHomeContent} from './module/initPage.js';
 import InitMenu from './module/menu';
+import InitContact from './module/contact.js';
 
 //Init Website
 InitialWebsite();
@@ -22,28 +23,26 @@ tabs.forEach(tab => {
     // add the "active" class to the clicked tab and content element
     tab.classList.add('active');
 
-    
+    // reset floater class name
     const floater = document.querySelector('.floater');
     floater.innerHTML = ``;
     floater.className = 'floater';
 
+    // switch the content for the corresponding tab.
     switch(target){
-      
       case '#home':
-        console.log('load home');
-        LoadHomeContent();
+        InitHomeContent();
         break;
 
       case '#menu':
-        console.log('load menu');
         floater.classList.add('menu');
         InitMenu();
         break;
       
       case '#contact':
-        console.log('load contact');
+        floater.classList.add('contact');
+        InitContact();
         break;
     }
-
   });
 });

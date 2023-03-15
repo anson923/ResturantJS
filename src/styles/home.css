@@ -29,4 +29,32 @@
 
   padding: 20px;
   z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-gap: 20px;
+}
+
+@media (max-width: 700px){
+  .floater {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
+
+#ImageContainer{
+  max-width: 500px;
+}
+
+
+#FoodImage {
+  width: 100%;
+}
+
+#HomeText {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }

@@ -11,7 +11,7 @@
 
 .ContactContainer {
   width: 100%;
-  color: white;
+  color: var(--normal-color);
   display: grid;
   align-items: center;
   justify-content: space-evenly;

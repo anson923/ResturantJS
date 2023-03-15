@@ -55,6 +55,6 @@
 
 #HomeText {
   font-size: 1rem;
-  color: white;
+  color: var(--normal-color);
   text-align: center;
 }

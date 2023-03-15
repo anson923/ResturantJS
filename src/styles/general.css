@@ -23,6 +23,14 @@
   padding: 0;
 }
 
+:root{
+  --header-color: rgba(255, 0, 0, 0.2);
+  --link-color: aqua;
+  --normal-color: rgb(228, 228, 228);
+  --food-text-color: black;
+  --background-color: pink;
+}
+
 body{
   font-family: 'Roboto', 'Arial';
   font-weight: normal;
@@ -36,5 +44,5 @@ body{
 }
 
 a {
-  color: aqua;
+  color: var(--link-color);
 }

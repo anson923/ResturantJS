@@ -1,4 +1,4 @@
-# ResturantJS
+# SpicyIsland Restaurant Website
 Technology:
 Webpack 
 Javascript 
